@@ -12,7 +12,7 @@ class Motor (models.Model):
     time = models.DateTimeField()
     
 class MotorAdmin(admin.ModelAdmin):
-    list_display = ('title','time')
+    list_display = ('title','body','time')
 
 
 admin.site.register(Motor, MotorAdmin)
